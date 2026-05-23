@@ -20,3 +20,4 @@ PERSON2="${2:-Biden}"  # Uses Biden as a default if empty
 echo "$PERSON1: Hello, $PERSON2"
 echo "$PERSON2: I'm doing well."
 echo "$PERSON1: I'm doing great."
+echo "What about you $PERSON2?"
