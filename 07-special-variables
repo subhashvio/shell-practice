@@ -3,4 +3,7 @@
 echo $USER
 echo $PWD
 echo $HOME
-echo $$
+echo "PID: $$"
+echo "PID of the just running command: $!"
+sleep 5 &
+echo "Line number: $LINENO"
