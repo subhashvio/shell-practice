@@ -1,4 +1,6 @@
 #!/bin/bash
 
 echo $USER
-echo $PASSWORD
+echo $PWD
+echo $HOME
+echo $$
