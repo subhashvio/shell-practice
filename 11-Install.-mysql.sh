@@ -20,3 +20,4 @@ if [ $? -ne 0 ]; then
 
 else   
     echo "Installing MySql is... SUCCESS"
+    
