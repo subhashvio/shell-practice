@@ -3,14 +3,17 @@
 NUMBER=$1
 
 # gt --> greater htan
+# ge --> greater than or equal
 # lt --> less than
+# le --> less than or equal
 # eq--> equal
 # ne --> not equal
-# ge --> greater than or equal
-# le --> less than or equal
 
-if [ $NUMBER -ge 20 ]; then
-    echo "Given number $NUMBER is greater than or equal to 20"
+
+if [ $NUMBER -gt 20 ]; then
+    echo "Given number $NUMBER is greater than 20"
+elseif [ $NUMBER -eq 20 ]; than
+    echo "Given number $NUMBER is equal to 20"
 else
-    echo "Given number $NUMBER is less than or equal to 20"
+    echo "Given number $NUMBER is less than 20"
 fi
