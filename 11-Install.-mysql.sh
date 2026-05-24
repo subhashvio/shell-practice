@@ -10,4 +10,10 @@ if [ $USERID -ne 0 ]; then
 
 fi
 
-    echo "I am continuing..."
+#    echo "I am continuing..."
+
+echo "Installing MySQL"
+dnf install mysoudljf -y
+
+echo "I am continuing..."
+echo "I am still continuing..."
