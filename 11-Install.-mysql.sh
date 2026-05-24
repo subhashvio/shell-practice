@@ -17,7 +17,7 @@ dnf install mydfsql -y
 
 if [ $? -ne 0 ]; then
     echo "Installing MySql is... FAILED"
-
+    exit 1
 else   
     echo "Installing MySql is... SUCCESS"
 fi
