@@ -6,6 +6,6 @@ read USER_NAME # here USER_NAME is variable. Whatever you enter in terminal it w
 echo "User name is $USER_NAME"
 
 echo "Please nter your Password"
-read -s PASSWORD
+read PASSWORD
 
 echo "Password is: $PASSWORD"
