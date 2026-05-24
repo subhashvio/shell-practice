@@ -2,6 +2,8 @@
 
 echo $@
 echo $#
+echo $1
+echo $2
 echo $USER
 echo $PWD
 echo $HOME
@@ -9,3 +11,8 @@ echo "PID: $$"
 echo "PID of the just running command: $!"
 sleep 5 &
 echo "Line number: $LINENO"
+echo "PID of the background command running just now: $!"
+wait $!	
+echo "Line number: $LINENO"
+echo "Script executed in $SECONDS seconds"
+echo "Random number: $RANDOM"
