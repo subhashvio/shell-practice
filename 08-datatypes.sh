@@ -9,3 +9,5 @@ echo "Total value is: $SUM"
 TOTAL=$(($NUM1-NUM2))
 echo "Total is: $TOTAL"
 
+
+
