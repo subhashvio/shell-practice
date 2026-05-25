@@ -16,8 +16,8 @@ echo "Line number: $LINENO"
 echo "Script executed in $SECONDS seconds"
 echo "Random number: $RANDOM"
 lkjljlj
-echo "Exit code of preous command: $?"
+echo "Exit code of previous command: $?"
 echo "Line number: $LINENO"
-echo "Exit code of preous command: $?"
+echo "Exit code of previous command: $?"
 
 

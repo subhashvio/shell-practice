@@ -13,7 +13,7 @@ fi
 #    echo "I am continuing..."
 dnf list installed mysql
 
-if [ $? -eq 0]; then
+if [ $? -eq 0 ]; then
     echo "MySql is already installed... SKIPPING"
 else
 
@@ -31,11 +31,11 @@ fi
 #    Installing ngnix"
 dnf list installed ngnix
 
-if [ $? -eq 0]; then
+if [ $? -eq 0 ]; then
     echo "ngnix is already installed... SKIPPING"
 else
 
-    echo "Installing ngnixL"
+    echo "Installing ngnix"
     dnf install ngnix -y
 
     if [ $? -ne 0 ]; then
