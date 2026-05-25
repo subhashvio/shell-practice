@@ -27,3 +27,21 @@ else
         echo "Installing MySql is... SUCCESS"
     fi
 fi
+
+#    Installing ngnix"
+dnf list installed ngnix
+
+if [ $? -eq 0]; then
+    echo "ngnix is already installed... SKIPPING"
+else
+
+    echo "Installing ngnixL"
+    dnf install ngnix -y
+
+    if [ $? -ne 0 ]; then
+        echo "Installing ngnix is... FAILED"
+        exit 1
+    else   
+        echo "Installing ngnix is... SUCCESS"
+    fi
+fi
