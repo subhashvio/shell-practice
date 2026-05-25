@@ -19,10 +19,10 @@ fi
 VALIDATE()
 {
     if [ $2 -ne 0 ]; then   
-        echo "Installing $1 is .... FAILED
+        echo "Installing $1 is .... FAILED"
         exit 1
     else
-        echo "Installing $1 is .... SUCCESS
+        echo "Installing $1 is .... SUCCESS"
     fi
 }
 
@@ -31,7 +31,7 @@ dnf list installed mysql &>> $LOGS_FILE
 
 if [ $? -eq 0 ]; then
   
-    echo "MySql is already installed ... SKIPPING
+    echo "MySql is already installed ... SKIPPING"
 else
     echo "Installing MySql"
     dnf install mysql -y &>> $LOGS_FILE
