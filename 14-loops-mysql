@@ -40,6 +40,6 @@ for package in $@
             dnf install $package -y &>> LOGS_FILE
             VALIDATE "Installing $package" $?
         else
-            echo -e "$TIMESTAMP [INFO] package already installed ....$G SKIPPING $N" | tee -a $LOGS_FILE
+            echo -e "$TIMESTAMP [INFO] package already installed ....$Y SKIPPING $N" | tee -a $LOGS_FILE
         fi
     done
